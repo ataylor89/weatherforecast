@@ -15,5 +15,8 @@ def forecast():
         latitude = request.form['latitude']
         longitude = request.form['longitude']
         city = weather.rev_geocode(latitude, longitude)
-    forecast = weather.get_forecast(city, latitude, longitude)
+    forecast = weather.get_forecast(latitude, longitude)
+    forecast['city'] = city
+    forecast['latitude'] = latitude
+    forecast['longitude'] = longitude
     return jsonify(forecast)
