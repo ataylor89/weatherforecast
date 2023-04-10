@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>The weather forecast</title>
+        <script type="text/javascript" src="{{url_for('static', filename='js/jquery-3.6.0.min.js')}}"></script>
+        <script type="text/javascript" src="{{url_for('static', filename='js/moment.js')}}"></script>
+        <script type="text/javascript" src="{{url_for('static', filename='js/weather.js')}}"></script>
+        <link rel="stylesheet" href="{{url_for('static', filename='css/weather.css')}}"/>
+    </head>
+    <body>
+        <div id="container">
+            <h1>The weather forecast</h1>
+            <h3 id="today"></h3>
+            <form id="searchform">
+                <div>
+                    Search by
+                    <input type="radio" name="method" value="city" checked />
+                    <label for="method">city</label>
+                    <input type="radio" name="method" value="coordinates" />
+                    <label for="method">coordinates</label>
+                </div>
+                <div id="search_by_city" class="vmargin">
+                    <table class="search">
+                        <tr>                    
+                            <td>
+                                <label for="city">City:</label>
+                            </td>
+                            <td>
+                                <input name="city" type="text" pattern="[a-zA-Z,.; ]{1,100}"/>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="search_by_coordinates" class="vmargin" style="display: none">
+                    <table class="search">
+                        <tr>
+                            <td>
+                                <label for="latitude">Latitude:</label>
+                            </td>
+                            <td>
+                                <input name="latitude" type="number" min="0" max="90" step="any" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="longitude">Longitude:</label>
+                            </td>
+                            <td>
+                                <input name="longitude" type="number" min="-180" max="180" step="any" />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="vmargin">
+                    <button type="submit" disabled>Search</button>
+                </div>
+            </form>
+            <table id="forecast" style="display: none">
+                <tr>
+                    <th>Period</th>
+                    <th>Temperature</th>
+                    <th>Relative Humidity</th>
+                    <th>Chance of Rain</th>
+                    <th>Dewpoint</th>
+                    <th>Wind Direction</th>
+                    <th>Wind Speed</th>
+                    <th>Short Forecast</th>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
