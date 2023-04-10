@@ -5,7 +5,7 @@ import logging
 app = Flask(__name__)
 
 config = configparser.ConfigParser()
-config.read('weatherforecast/weather.ini')
+config.read('weather.ini')
 bing_api_key = config.get('DEFAULT', 'BING_API_KEY', fallback=None)
 
 logger = logging.getLogger()
