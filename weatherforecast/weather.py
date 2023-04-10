@@ -8,12 +8,12 @@ def get_forecast(latitude, longitude):
     url2 = resp1.json()['properties']['forecast']
     resp2 = requests.get(url2)
     data = resp2.json()['properties']
-    forecast = formatJson(data)
+    forecast = format_json(data)
     forecast['latitude'] = latitude
     forecast['longitude'] = longitude
     return forecast
 
-def formatJson(data):
+def format_json(data):
     forecast = {}
     forecast['elevation'] = f'{0} m'.format(data['elevation']['value'])
     forecast['generatedAt'] = data['generatedAt']
