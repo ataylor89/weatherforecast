@@ -9,7 +9,7 @@ def home():
 def forecast():
     city = request.form['city']
     if city:
-        [latitude, longitude] = weather.geocode(city)
+        latitude, longitude = weather.geocode(city)
     else:
         latitude = request.form['latitude']
         longitude = request.form['longitude']
