@@ -59,3 +59,23 @@ The web application can be started by running the following command in the root 
 To get the webapp working properly, the requirements have to be installed, a weather.ini file has to be created, and a Bing Maps API key has to be pasted into the weather.ini file.
 
 The weatherforecast application gets a weekly forecast for a city or a place. The user can search on the name of a city, or search on geographical coordinates (longitude and latitude), to look up a forecast.
+
+## Opening the website
+
+After starting the server with the command `python main.py`, the website can be opened in a web browser by visiting the URL `http://localhost:8080`.
+
+What happens when a web browser opens a website?
+
+The web browser establishes a connection with a web server. A connection is uniquely defined by a pair of sockets. Each socket has the form ipaddr:port, where ipaddr is an IP address and port is a port number.
+
+I think that the word *socket* originates in electrical sockets. When we plug a computer into an electrical socket, we create a connection between a wall socket and a socket (or port) on a computer that is designed to receive electricity. This connection allows for a current of electricity to pass between the wall socket and the computer.
+
+A connection between two processes (in this case a web browser and a web server) allows for a stream of bytes to be sent over a connection. The web browser and the web server communicate using the hypertext transfer protocol (HTTP). A protocol is a set of rules for communication.
+
+HTTP is based on requests and responses. The web browser makes a GET request for the index page of a website. The web server responds to this GET request with the index page of the website.
+
+The file `main.py` is literally the code for a web server. When we run the command `python main.py`, we start the web server. The web server is running on localhost (the client host machine) and listening on port 8080. When we open a web browser, we start the client. When we visit the URL `http://localhost:8080` in a web browser, we establish a connection between the web browser and the web server running at 127.0.0.1:8080. (The domain name `localhost` gets resolved to the IP address 127.0.0.1). The web browser makes a GET request for the index page of the web server. The web server responds with the contents of the `weather.html` index page.
+
+So far the web server `main.py` has two web services that can be called by the browser. The first web service handles a GET request for the index page and it has the path `/`. The second web service handles a POST request for the forecast and it has the path `/forecast`. It is customary to use a GET request to retrieve a web page. It is common to use a POST request to submit a form. A POST request can send a large amount of data in the request body, which makes it ideal for submitting a form. When we click the "search" button in the search form, we send a POST request to the web server, which responds with a JSON containing the weather forecast. A JSON is a data structure that stores data in a key-value format.
+
+This summarizes what happens when we open the URL `http://localhost:8080` in a web browser. We have talked about the client-server model of internet communication. We have talked about what a web browser is, what a web server is, what a socket is, what a connection is. A connection allows two processes to communicate. A connection is uniquely identified by the addresses of the two processes. When two processes establish a connection, they can communicate by sending or receiving a stream of bytes. I think that the word *socket* was inspired by electrical sockets. When we plug a computer into a wall socket, the computer receives electricity from the wall socket. When we connect a web browser to a web server, the two processes can send and receive data, like the text of a web page or the data in a form.
