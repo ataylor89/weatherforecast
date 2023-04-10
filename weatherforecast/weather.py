@@ -39,9 +39,7 @@ def format_json(data):
 
 def geocode(city):
     g = geocoder.bing(city, key=bing_api_key)
-    latitude = g.json['lat']
-    longitude = g.json['lng']
-    return (latitude, longitude)
+    return g.latlng
 
 def celsius_to_fahrenheit(celsius):
     return celsius * 1.8 + 32
