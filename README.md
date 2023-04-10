@@ -1,4 +1,4 @@
-# weatherstation
+# weatherforecast
 
 ## Setting up the weather.ini file
 
