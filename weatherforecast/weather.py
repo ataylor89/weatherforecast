@@ -2,16 +2,16 @@ from weatherforecast import bing_api_key
 import requests
 import geocoder
 
-def get_forecast(latitude, longitude, city):
+def get_forecast(city, latitude, longitude):
     url1 = f"https://api.weather.gov/points/{latitude},{longitude}"
     resp1 = requests.get(url1)
     url2 = resp1.json()['properties']['forecast']
     resp2 = requests.get(url2)
     data = resp2.json()['properties']
     forecast = format_json(data)
+    forecast['city'] = city
     forecast['latitude'] = latitude
     forecast['longitude'] = longitude
-    forecast['city'] = city
     return forecast
 
 def format_json(data):
