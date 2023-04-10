@@ -5,7 +5,7 @@ from weatherforecast import app, weather
 def home():
     return render_template('weather.html')
 
-@app.route('/forecast/', methods=['POST'])
+@app.route('/forecast', methods=['POST'])
 def forecast():
     city = request.form['city']
     if city:
