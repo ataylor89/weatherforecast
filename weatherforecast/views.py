@@ -7,8 +7,9 @@ def home():
 
 @app.route('/forecast', methods=['POST'])
 def forecast():
-    city = request.form['city']
-    if city:
+    param = request.form['search_param']
+    if param == 'city':
+        city = request.form['city']
         latitude, longitude = weather.geocode(city)
     else:
         latitude = request.form['latitude']

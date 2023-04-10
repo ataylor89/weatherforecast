@@ -1,6 +1,6 @@
 function handleKeyEvent(e) {
-    const search_type = $('input[name="method"]').val();
-    if (search_type == 'city') {
+    const param = $('input[name="search_param"]:checked').val();
+    if (param == 'city') {
         const city = $('input[name="city"]').val();
         if (city.length > 0) {
             $('button[type="submit"]').prop('disabled', false);
@@ -9,7 +9,7 @@ function handleKeyEvent(e) {
             $('button[type="submit"]').prop('disabled', true);
         }
     }
-    else if (search_type == 'coordinates') {
+    else if (param == 'coordinates') {
         const latitude = $('input[name="latitude"]').val();
         const longitude = $('input[name="longitude"]').val();
         if (latitude.length > 0 && longitude.length > 0) {
@@ -22,7 +22,7 @@ function handleKeyEvent(e) {
 }
 
 function handleRadioEvent() {
-    const val = $('input[name="method"]:checked').val();
+    const val = $('input[name="search_param"]:checked').val();
     if (val == 'city') {
         $('#search_by_city').show();
         $('#search_by_coordinates').hide();
@@ -39,7 +39,7 @@ $(document).ready(function() {
     $('input[name="city"]').on('input', handleKeyEvent);
     $('input[name="latitude"]').on('input', handleKeyEvent);
     $('input[name="longitude"]').on('input', handleKeyEvent);
-    $('input[name="method"]').on('change', handleRadioEvent);
+    $('input[name="search_param"]').on('change', handleRadioEvent);
     $("#searchform").on('submit', function(e) {
         e.preventDefault();
         $.post('/forecast', $('#searchform').serialize(), function(data) {
