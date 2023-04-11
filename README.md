@@ -64,6 +64,8 @@ The weatherforecast application gets a weekly forecast for a city or a place. Th
 
 After starting the server with the command `python main.py`, the website can be opened in a web browser by visiting the URL `http://localhost:8080`.
 
+## Web browsers and web servers
+
 What happens when a web browser opens a website?
 
 The web browser establishes a connection with a web server. A connection is uniquely defined by a pair of sockets. Each socket has the form ipaddr:port, where ipaddr is an IP address and port is a port number.
