@@ -90,7 +90,7 @@ When a user visits `http://localhost:8080` with a web browser, the web browser d
 
 1. It resolves the domain name `localhost` to the IP address 127.0.0.1
 2. It opens the socket (127.0.0.1, 8080)
-3. It opens a stream for sending and reeciving data.
+3. It opens a stream for sending and receiving data.
 4. It issues a GET request to retrieve the index page of the website.
 
 If the GET request is successful, then the web server responds with the HTML of the web page.
