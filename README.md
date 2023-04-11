@@ -99,6 +99,6 @@ The weatherforecast application is a web server that offers two web services tha
 
 [a] It is common to think of all IO devices as files. A file is an abstraction. An abstraction is something that lets a set of different things be treated in the same way.
 
-[b] The IP address might be written into the stream at regular intervals to create packets. I think that this is more efficient than creating a new sequence of bytes at the time that the stream is flushed. Every packet gets routed to the correct recipient because it contains the IP address of the recipient.
+[b] The IP address eventually gets written into the stream at regular intervals to create packets. I'm not sure whether this happens before or after the stream is flushed. Every packet gets routed to the correct recipient because it contains the IP address of the recipient.
 
 [c] The word *asynchronous* means not at the time of the initial transmission, or after the time of the initial transmission. Since it is not known beforehand what city the user wants a forecast for, the web page makes asynchronous requests to the server every time the user submits a form.
