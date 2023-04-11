@@ -97,6 +97,8 @@ If the GET request is successful, then the web server responds with the HTML of 
 
 The weatherforecast application is a web server that offers two web services that can be called by a browser. The first web service has the path `/` and it returns the index page of the website. The second web service has the path `/forecast` and it allows the web page to make asynchronous requests for weather forecasts. [c]
 
+---
+
 [a] It is common to think of all IO devices as files. A file is an abstraction. An abstraction is something that lets a set of different things be treated in the same way.
 
 [b] A stream gets logically organized into packets. Each packet contains the IP address of the recipient, ensuring that the data reaches the correct recipient.
