@@ -64,7 +64,7 @@ The weatherforecast application gets a weekly forecast for a city or a place. Th
 
 After starting the server with the command `python main.py`, the website can be opened in a web browser by visiting the URL `http://localhost:8080`.
 
-## Some notes on the world wide web
+## Some notes on the Internet
 
 What happens when a web browser opens a website?
 
@@ -83,3 +83,5 @@ So far the web server `main.py` has two web services that can be called by the b
 I think that socket programming is easier to understand when we have formal definitions of key terms, like "socket" and "stream". A socket is a data structure consisting of an IP address and a port. A stream is a data structure consisting of a series of packets and a series of time intervals. We use streams to communicate over a connection. The stream breaks the data into chunks called "packets" and sends them at different time intervals. After opening a connection, we can write to a stream or read from a stream to send or receive data. 
 
 When a web browser opens a web site, it opens a socket to the server, using the domain name and the port. Then it opens an input stream and an output stream, and communicates with the server according to the rules of the hypertext transfer protocol (HTTP). There are rules for a GET request, rules for a POST request, and rules for all kinds of HTTP requests. These rules are designed to make communication reliable and efficient.
+
+The Internet and the World Wide Web both refer to a network of computers. Two computers in this network can communicate by establishing a connection. There are many communication protocols that they can use to communicate. HTTP is one communication protocol, and it allows a client to retrieve a webpage from a server. The client is called a web browser, and the server is called a web server. The client can issue a GET request to retrieve the index page from a web server. If the GET request is successful, then the server responds with the HTML of the index page.
