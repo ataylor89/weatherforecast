@@ -66,7 +66,7 @@ After starting the server with the command `python main.py`, the website can be 
 
 ## Some notes on the world wide web
 
-What happens when a web browser opens a website?
+What happens when a user opens a website in a web browser?
 
 The web browser creates a connection with a web server. A connection is uniquely defined by a pair of sockets. Each socket has the form ipaddr:port, where ipaddr is an IP address and port is a port number.
 
