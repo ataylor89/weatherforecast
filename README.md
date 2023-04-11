@@ -72,9 +72,9 @@ The web browser resolves the domain name "localhost" to the IP address 127.0.0.1
 
 Here are some definitions of words that are used in network programming.
 
-1. A socket is a file or a file descriptor. [a]
+1. A socket is a file or a file descriptor.
 2. A socket address is a data structure that contains an IP address and a port.
-3. A stream is a sequence of bytes. [b]
+3. A stream is a sequence of bytes.
 4. A protocol is a set of rules. A communication protocol is a set of rules for communication.
 5. A web browser is a client that renders web content.
 6. A web server is a server that distributes web content.
@@ -95,12 +95,6 @@ When a user visits `http://localhost:8080` with a web browser, the web browser d
 
 If the GET request is successful, then the web server responds with the HTML of the web page.
 
-The weatherforecast application is a web server that offers two web services that can be called by a browser. The first web service has the path `/` and it returns the index page of the website. The second web service has the path `/forecast` and it allows the web page to make asynchronous requests for weather forecasts. [c]
+The weatherforecast application is a web server that offers two web services that can be called by a browser. The first web service has the path `/` and it returns the index page of the website. The second web service has the path `/forecast` and it allows the web page to make asynchronous requests for weather forecasts.
 
----
-
-[a] It is common to think of all IO devices as files. A file is an abstraction. An abstraction is something that lets a set of different things be treated in the same way.
-
-[b] A stream gets logically organized into packets. Each packet contains the IP address of the recipient, ensuring that the data reaches the correct recipient.
-
-[c] The word *asynchronous* means not at the time of the initial transmission, or after the time of the initial transmission. Since it is not known beforehand what city the user wants a forecast for, the web page makes asynchronous requests to the server every time the user submits a form.
+The word *asynchronous* means not at the time of the initial transmission, or after the time of the initial transmission. Since it is not known beforehand what city the user wants a forecast for, the web page makes asynchronous requests to the server every time the user submits a form.
