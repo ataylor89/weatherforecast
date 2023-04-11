@@ -76,7 +76,7 @@ Here are some definitions of words that are used in network programming.
 2. A stream is a data structure consisting of a series of packets and a series of time intervals.
 3. A protocol is a set of rules.
 4. A communication protocol is a set of rules for communication.
-5. A web browser is a client that renders web pages.
-6. A web server is a server that distributes web pages.
+5. A web browser is a client that renders web content.
+6. A web server is a server that distributes web content.
 
 These definitions help us understand what's happening when we browse the internet using protocols like HTTP.
