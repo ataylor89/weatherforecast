@@ -74,7 +74,7 @@ I think that the word *socket* comes from electrical engineering. We connect a c
 
 In order to exchange data between two computers, we create a connection. The two computers communicate according to a protocol. One defition of protocol is this: a protocol is a set of rules. We can think of a communication protocol as a set of rules for communication.
 
-HTTP is a protocol that helps two computers exchange hypertext documents. A hypertext document is written in code that is understood by the web browser (HTML, JavaScript, CSS). 
+HTTP is a protocol that helps computers transfer web pages.
 
 HTTP is based on requests and responses. A web browser can retrieve a web page from a server using a GET request. The web server can respond to a GET request with the HTML of the web page.
 
