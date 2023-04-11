@@ -74,7 +74,7 @@ Here are some definitions of words that are used in network programming.
 
 1. A socket is a file or a file descriptor.
 2. A socket address is a data structure that contains an IP address and a port.
-3. A stream is a sequence of bytes.
+3. A stream is a sequence of bytes. [*]
 4. A protocol is a set of rules. A communication protocol is a set of rules for communication.
 5. A web browser is a client that renders web content.
 6. A web server is a server that distributes web content.
@@ -98,3 +98,5 @@ If the GET request is successful, then the web server responds with the HTML of 
 The weatherforecast application is a web server that offers two web services that can be called by a browser. The first web service has the path `/` and it returns the index page of the website. The second web service has the path `/forecast` and it allows the web page to make asynchronous requests for weather forecasts.
 
 The word *asynchronous* means not at the time of the initial transmission, or after the time of the initial transmission. Since it is not known beforehand what city the user wants a forecast for, the web page makes asynchronous requests to the server every time the user submits a form.
+
+[*] The IP address might be written into the stream at regular intervals to create packets. I think that this is more efficient than creating a new sequence of bytes at the time that the stream is flushed. Every packet gets routed to the correct recipient because it contains the IP address of the recipient.
