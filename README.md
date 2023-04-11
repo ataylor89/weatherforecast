@@ -62,4 +62,21 @@ The weatherforecast application gets a weekly forecast for a city or a place. Th
 
 ## Opening the website
 
-After starting the server with the command `python main.py`, the website can be opened in a web browser by visiting the URL `http://localhost:8080`.
+After starting the server with the command `python main.py`, the website can be opened in a web browser by visiting the URL
+
+    http://localhost:8080
+
+The web browser resolves the domain name "localhost" to the IP address 127.0.0.1. The port number 8080 is needed to open a socket with the server. The port number specifies which port the server is listening on.
+
+## Some notes on network programming
+
+Here are some definitions of words that are used in network programming.
+
+1. A socket is a data structure consisting of an IP address and a port.
+2. A stream is a data structure consisting of a series of packetes and a series of time intervals.
+3. A protocol is a set of rules.
+4. A communication protocol is a set of rules for communication.
+5. A web browser is a client that renders web pages.
+6. A web server is a server that distributes web pages.
+
+These definitions help us understand what's happening when we browse the internet using protocols like HTTP.
