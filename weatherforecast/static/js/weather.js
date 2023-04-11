@@ -76,6 +76,9 @@ $(document).ready(function() {
                 td7.html(period['shortForecast']);
                 tr.append(td7);
                 $('#forecast').append(tr);
+                let td8 = $('<td/>');
+                td8.html(period['detailedForecast']);
+                tr.append(td8);
             }
             $('#forecast').show();
         });
