@@ -73,7 +73,7 @@ The web browser resolves the domain name "localhost" to the IP address 127.0.0.1
 Here are some definitions of words that are used in network programming.
 
 1. A socket is a data structure consisting of an IP address and a port.
-2. A stream is a data structure consisting of a series of packets and a series of time intervals.
+2. A stream is a sequence of bytes.
 3. A protocol is a set of rules.
 4. A communication protocol is a set of rules for communication.
 5. A web browser is a client that renders web content.
