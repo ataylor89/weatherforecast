@@ -1,4 +1,4 @@
-function handleKeyEvent(e) {
+function handleKeyEvent() {
     const param = $('input[name="search_param"]:checked').val();
     if (param == 'city') {
         const city = $('input[name="city"]').val();
