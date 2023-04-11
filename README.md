@@ -70,7 +70,7 @@ What happens when a web browser opens a website?
 
 The web browser establishes a connection with a web server. A connection is uniquely defined by a pair of sockets. Each socket has the form ipaddr:port, where ipaddr is an IP address and port is a port number.
 
-I think that the word *socket* comes from electrical engineering. We connect a computer to a source of electricity by plugging the computer into a socket. The connection between a wall socket and a socket in a computer allows for electricity to flow into a computer.
+I think that the word *socket* comes from electrical engineering. We connect a computer to a source of electricity by plugging the computer into a socket. The connection between a wall socket and a computer socket allows for electricity to flow into a computer.
 
 In order to exchange data between two computers, we create a connection. The two computers communicate according to a protocol. One defition of protocol is this: a protocol is a set of rules. We can think of a communication protocol as a set of rules for communication.
 
