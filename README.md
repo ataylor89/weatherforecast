@@ -89,9 +89,9 @@ When we look at the address `http://localhost:8080`, we observe that
 When a user visits `http://localhost:8080` with a web browser, the web browser does the following.
 
 1. It resolves the domain name `localhost` to the IP address 127.0.0.1
-2. It opens the socket (127.0.0.1, 8080)
-3. It opens a stream for sending and receiving data.
-4. It issues a GET request to retrieve the index page of the website.
+2. It opens a socket and connects it with the address 127.0.0.1:8080. This forms a connection.
+3. It opens a stream for sending and receiving data across the connection.
+4. It writes a GET request to the stream to retrieve the index page of the server.
 
 If the GET request is successful, then the web server responds with the HTML of the web page.
 
