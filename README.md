@@ -66,7 +66,7 @@ After starting the server with the command `python main.py`, the website can be 
 
     http://localhost:8080
 
-The web browser resolves the domain name "localhost" to the IP address 127.0.0.1. The port number 8080 is needed to open a socket with the server. The port number specifies which port the server is listening on.
+The web browser resolves the domain name "localhost" to the IP address 127.0.0.1. The port number 8080 is needed to open a connection with the server. The port number specifies which port the server is listening on.
 
 ## Some notes on network programming
 
