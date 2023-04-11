@@ -68,7 +68,7 @@ After starting the server with the command `python main.py`, the website can be 
 
 What happens when a user opens a website in a web browser?
 
-The web browser creates a connection with a web server. A connection is uniquely defined by a pair of sockets. Each socket has the form ipaddr:port, where ipaddr is an IP address and port is a port number.
+The web browser establishes a connection with a web server. A connection is uniquely defined by a pair of sockets. Each socket has the form ipaddr:port, where ipaddr is an IP address and port is a port number.
 
 I think that the word *socket* comes from electrical engineering. We connect a computer to a source of electricity by plugging the computer into a socket. The connection between a wall socket and a computer socket allows for electricity to flow into a computer.
 
