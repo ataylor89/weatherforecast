@@ -64,7 +64,7 @@ The weatherforecast application gets a weekly forecast for a city or a place. Th
 
 After starting the server with the command `python main.py`, the website can be opened in a web browser by visiting the URL `http://localhost:8080`.
 
-## Web browsers and web servers
+## Some notes on the world wide web
 
 What happens when a web browser opens a website?
 
