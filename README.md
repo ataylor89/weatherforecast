@@ -80,3 +80,21 @@ Here are some definitions of words that are used in network programming.
 6. A web server is a server that distributes web content.
 
 These definitions help us understand what's happening when we browse the internet using protocols like HTTP.
+
+When we look at the address `http://localhost:8080`, we observe that
+
+1. The phrase localhost:8080 defines a socket.
+2. The prefix http defines a communication protocol.
+
+When a user visits `http://localhost:8080` with a web browser, the web browser does the following.
+
+1. It resolves the domain name `localhost` to the IP address 127.0.0.1
+2. It opens the socket (127.0.0.1, 8080)
+3. It opens a stream for sending and reeciving data.
+4. It issues a GET request to retrieve the index page of the website.
+
+If the GET request is successful, then the web server responds with the HTML of the web page.
+
+The weatherforecast application is a web server that offers two web services that can be called by a browser. The first web service has the path `/` and it returns the index page of the website. The second web service has the path `/forecast` and it allows the web page to make asynchronous requests for weather forecasts.
+
+The word *asynchronous* means not at the time of the initial transmission, or after the time of the initial transmission. Since it is not known beforehand what city the user wants a forecast for, the web page makes asynchronous requests to the server every time the user submits a form.
