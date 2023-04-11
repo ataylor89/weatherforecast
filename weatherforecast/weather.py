@@ -32,6 +32,7 @@ def format_json(data):
         d['windSpeed'] = s['windSpeed']
         d['shortForecast'] = s['shortForecast']
         d['detailedForecast'] = s['detailedForecast']
+        d['icon'] = s['icon']
         forecast['periods'].append(d)
     return forecast
 

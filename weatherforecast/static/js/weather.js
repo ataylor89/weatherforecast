@@ -75,10 +75,13 @@ $(document).ready(function() {
                 let td7 = $('<td/>');
                 td7.html(period['shortForecast']);
                 tr.append(td7);
-                $('#forecast').append(tr);
                 let td8 = $('<td/>');
                 td8.html(period['detailedForecast']);
                 tr.append(td8);
+                let td9 = $('<td/>');
+                td9.html('<img src="' + period['icon'] + '"/>');
+                tr.append(td9);
+                $('#forecast').append(tr);
             }
             $('#forecast').show();
         });
