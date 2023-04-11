@@ -72,10 +72,10 @@ The web browser resolves the domain name "localhost" to the IP address 127.0.0.1
 
 Here are some definitions of words that are used in network programming.
 
-1. A socket is a data structure consisting of an IP address and a port.
-2. A stream is a sequence of bytes.
-3. A protocol is a set of rules.
-4. A communication protocol is a set of rules for communication.
+1. A socket is a file or a file descriptor.
+2. A socket address is a data structure that contains an IP address and a port.
+3. A stream is a sequence of bytes.
+4. A protocol is a set of rules. A communication protocol is a set of rules for communication.
 5. A web browser is a client that renders web content.
 6. A web server is a server that distributes web content.
 
@@ -83,7 +83,7 @@ These definitions help us understand what's happening when we browse the interne
 
 When we look at the address `http://localhost:8080`, we observe that
 
-1. The phrase localhost:8080 defines a socket.
+1. The phrase localhost:8080 defines a socket address.
 2. The prefix http defines a communication protocol.
 
 When a user visits `http://localhost:8080` with a web browser, the web browser does the following.
