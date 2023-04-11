@@ -84,7 +84,7 @@ These definitions help us understand what's happening when we browse the interne
 When we look at the address `http://localhost:8080`, we observe that
 
 1. The phrase localhost:8080 defines a socket address.
-2. The prefix http defines a communication protocol.
+2. The prefix http refers to a communication protocol.
 
 When a user visits `http://localhost:8080` with a web browser, the web browser does the following.
 
