@@ -99,4 +99,4 @@ The weatherforecast server offers two web services that can be called by a brows
 
 The first web service has the path `/` and it returns the index page of the website. The second web service has the path `/forecast` and it allows the web page to make asynchronous requests for a weather forecast.
 
-The word *asynchronous* means not at the time of the initial transmission, or after the time of the initial transmission. Since the location of the forecast is not known beforehand, the web page makes an asynchronous request for the forecast every time the user clicks the search button.
+The word *asynchronous* means not at the time of the initial transmission, or after the time of the initial transmission. Since the location of the forecast is not known beforehand, the web page makes an asynchronous request for the forecast every time the user submits the form.
