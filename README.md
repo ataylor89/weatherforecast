@@ -95,6 +95,8 @@ When a user visits `http://localhost:8080` with a web browser, the web browser d
 
 If the GET request is successful, then the web server responds with the HTML of the web page.
 
-The weatherforecast server offers two web services that can be called by a browser. The first web service has the path `/` and it returns the index page of the website. The second web service has the path `/forecast` and it allows the web page to make an asynchronous request for a weather forecast.
+The weatherforecast server offers two web services that can be called by a browser. 
+
+The first web service has the path `/` and it returns the index page of the website. The second web service has the path `/forecast` and it allows the web page to make an asynchronous request for a weather forecast.
 
 The word *asynchronous* means not at the time of the initial transmission, or after the time of the initial transmission. Since the location of the forecast is not known beforehand, the web page makes an asynchronous request for the forecast every time the user submits the form.
