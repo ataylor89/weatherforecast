@@ -76,8 +76,8 @@ Here are some definitions of words that are used in network programming.
 2. A socket address is a data structure that contains an IP address and a port.
 3. A stream is a sequence of bytes.
 4. A protocol is a set of rules. A communication protocol is a set of rules for communication.
-5. A web browser is a client that renders web content.
-6. A web server is a server that distributes web content.
+5. A web browser is a client that renders web pages.
+6. A web server is a server that distributes web pages.
 
 These definitions help us understand what's happening when we browse the internet using protocols like HTTP.
 
